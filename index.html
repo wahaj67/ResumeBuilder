@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale-=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dynamic Resume Builder</title>
+  </head>
+  <body class="light-mode">
+    <div class="container">
+      <h1>Dynamic Resume Builder</h1>
+       
+      <button id="toggle-theme">Switch to Dark Mode</button>
+
+      <form id="resume-form" class="form">
+        <h2>Personal Info</h2>
+        <div class="input-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Insert your username" required />
+     
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Enter your Name" required />
+        </div>
+
+        <div class="input-group">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+
+        <h2>Eductaion</h2>
+
+        <div class="input-group">
+          <input
+            type="text"
+            id="education"
+            placeholder="Enter your eductaion"
+            required
+          />
+        </div>
+        <h2>Work Experience</h2>
+        <div class="input-group">
+          <input
+            type="text"
+            id="work-experience"
+            placeholder="enter your  work-experience"
+            required
+          />
+        </div>
+        <h2>Skills</h2>
+        <div class="input-group">
+          <input
+            type="text"
+            id="skills"
+            placeholder="skills (comma seperated)"
+            required
+          />
+        </div>
+        <button type="submit" class="submit-btn">Generate Resume</button>
+      </form>
+      <div id="resume" class="resume-section"></div>
+      <button id="edit-resume" style="display: none;">
+
+        Edit Resume
+
+      </button>
+      
+    </div>
+    <div id="share" style="display:none">
+        <h2 id="share-title">Share Resume</h2>
+        <p> Click the button below to share your resume.</p>
+        <a href="#" id="share-link" target="_blank"> </a>
+        <br>
+        <button id="download"><b>Download as a PDF</b></button> 
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
